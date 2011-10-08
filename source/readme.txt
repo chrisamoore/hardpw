@@ -3,7 +3,7 @@
 -- =================================================================
 
 Keyloggers that record time between keystrokes (research).
-        Even if these exist, a hardened password is still much more secure, someone will have to train themselves 
+        Even if these exist, a hardened password is still much more secure,someone will have to train themselves 
         to type a password with the correct timings (assuming these were obtained).
 
 -- =================================================================
@@ -29,7 +29,7 @@ Demo Page:
 
 Registration Process:
         Will probably need to have users type password several times to obtain hardened password.
-                Average the timings of all timing sequences.
+                Average the timings.
 
 Automation:
         User should only need to supply the .js source, and a required <div> tag to implement.
