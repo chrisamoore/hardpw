@@ -1,0 +1,12 @@
+TaskList: 
+	- DB Schema
+	- Ajax 
+		- client 
+		- server
+	- db connect 
+	- design site
+	- minify plugin 
+	- write docs
+	- setup demos 
+	
+	
