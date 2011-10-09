@@ -17,7 +17,7 @@ Keyloggers that record time between keystrokes (research).
 
 How will the password data be transfered?
 	JSON or XML (overkill?)
-*********************************************************************
+******************************************************************
 	I am thinking JSON 
 *****************************************************************
 
