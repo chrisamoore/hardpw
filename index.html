@@ -44,7 +44,8 @@
 					console.log( hardPw );
 								
 				});		// turn this funct into a class for reuse on verification	
-
+				
+				$
 	    	});
 		function showPw(){
 			//Removing last ','
@@ -54,6 +55,19 @@
 			
 			hardPw = "";
 		};
+		function send(){
+			 $.ajax({
+ 	        		  type: "POST",
+ 	        		  // send vars from form to validate.php
+ 	        		  data: "password=" + passVar + "&verify=" + verifyVar + "&uid=" + userVar ,
+					  url: 'source/validate.php',
+					  success: function(data) {
+					    $('#result').html(data);
+					    //console.log(data);	
+					   }
+		}
+		
+		
 		/* I think the goal should be eeasy integration */
 		// compare PW to new PW for strength, calc tolerances
 		// use Jquery to Ajax the string to server for db compare / insert
@@ -75,7 +89,8 @@
 			<input type="text" name="user2" id="name2"/>	
 			<label for="password">Password:</label>
 			<input type="password" name="password" id="password"/>
-			<input onclick="showPw()" type="submit" name="submit" value="Submit" />
+			
+			<!-- <input onclick="showPw()" type="submit" name="submit" value="Submit" /> -->
 			<!-- User feed back Lik e calulation PW??? spinner or some shit  -->
 		</div>
 		<div id="result"></div>

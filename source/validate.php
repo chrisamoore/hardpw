@@ -4,8 +4,13 @@
 </head>
 <body>
 	<?php
-
-
+		// set vars to data from index
+		$var = $_POST['uid'];
+		$var = $_POST['password'];
+		$var = $_POST['verify'];
+		
+		
+		
 		//Will eventuall come in as POST data
 		$username = "poop";
 		$sequence = explode("-","160-200-153");	//Time (ms) between keystrokes, first character omitted.
@@ -28,9 +33,8 @@
 		}
 
 		echo $is_valid_sequence;
-
-
 		//Checking username and password is trivial.
+		
 		
 	?>
 	</div>
